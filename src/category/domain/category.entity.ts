@@ -66,11 +66,11 @@ export class Category extends Entity {
 
   static validate(entity: Category) {
     const validator = CategoryValidatorFactory.create();
-    const isValid = validator.validate(entity);
+    // const isValid = validator.validate(entity);
 
-    if (!isValid) {
-      throw new EntityValidationError(validator.errors!);
-    }
+    // if (!isValid) {
+    //   throw new EntityValidationError(validator.errors!);
+    // }
   }
 
   toJSON() {
